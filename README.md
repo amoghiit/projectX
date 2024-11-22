@@ -1,41 +1,43 @@
-# Project Overview
+## How to run the code
 
-This project implements and evaluates different model selection techniques to compare the performance of regression models. The following methods are covered:
+### Using a Notebook File
 
-- **Cross-Validation (K-Fold):** Evaluates model performance by splitting the data into multiple folds.
-- **Bootstrapping:** Estimates variability in performance using multiple resamples of the dataset.
-- **Akaike Information Criterion (AIC):** Balances model fit and complexity by penalizing overly complex models.
+#### Prerequisites
+- Install Python and required libraries: `numpy`, `matplotlib`.
 
-These methods are tested on synthetic data using Linear and Ridge Regression models implemented from scratch.
+#### Steps to Execute
+1. Open the terminal at the project folder.
+2. Run the command: `jupyter notebook Project2.ipynb`
+3. Run all cells sequentially.
+4. View the model evaluation outputs (e.g., MSE scores, AIC values) and plots for insights into model performance and residuals.
 
-## How to Run the Code
+### Using Python Class
 
-### Prerequisites
+#### Prerequisites
+- Install Python and required libraries: `numpy`, `matplotlib`, `sklearn`.
 
-Install Python and required libraries: `numpy`, `matplotlib`.
-
-### Steps to Execute
-
-1. Open the terminal at the project folder:
-2. Command: `jupyter notebook Project2.ipynb`
-3. Run all cells sequentially
-4. View model evaluation outputs (e.g., MSE scores, AIC values)
-5. View the plots for insights into model performance and residuals
+#### Steps to Execute
+1. Go to the `src` folder.
+2. Execute the command: `python .\pythonModelTest.py`
+3. View the model evaluation outputs and plots for insights into model performance and residuals.
 
 ## Outputs
 
-1. **Cross-Validation:**
-    - MSE Scores: [0.2473, 0.2475, 0.2448, 0.2401, 0.2326]
-    - Average MSE: 0.2425
-2. **Bootstrapping:**
-    - MSE Scores (first 5): [0.2408, 0.2316, 0.2475, 0.2507, 0.2412]
-    - Average MSE: 0.2397
-3. **AIC:**
-    - Value: -6247.93
-4. **Visualizations:**
-    - Residual distribution plot
-    - Error comparison across methods
-    - Bootstrapping confidence intervals
+### Cross-Validation
+- **MSE Scores:** [0.2473, 0.2475, 0.2448, 0.2401, 0.2326]
+- **Average MSE:** 0.2425
+
+### Bootstrapping
+- **MSE Scores (first 5):** [0.2408, 0.2316, 0.2475, 0.2507, 0.2412]
+- **Average MSE:** 0.2397
+
+### AIC
+- **Value:** -6247.93
+
+### Visualizations
+- Residual distribution plot.
+- Error comparison across methods.
+- Bootstrapping confidence intervals.
 
 ## Key Questions and Answers
 
@@ -56,20 +58,15 @@ Install Python and required libraries: `numpy`, `matplotlib`.
     - Extend AIC to include models with corrected versions like AICc.
 
 4. **What parameters are exposed?**
-    - **Cross-Validation:**
-      - `k` (number of folds), default: 5
-    - **Bootstrapping:**
-      - `num_iterations` (default: 100), seed for reproducibility
-    - **Regression Models:**
-      - Regularization parameter `alpha` (for Ridge), default: 1.0
+    - **Cross-Validation:** `k` (number of folds), default: 5.
+    - **Bootstrapping:** `num_iterations` (default: 100), seed for reproducibility.
+    - **Regression Models:** Regularization parameter `alpha` (for Ridge), default: 1.0.
 
 ## Additional Features
-
-- Synthetic data generator for flexible testing
-- Residual analysis and visualization tools for insights
-- Extendable framework for adding new model selectors
+- Synthetic data generator for flexible testing.
+- Residual analysis and visualization tools for insights.
+- Extendable framework for adding new model selectors.
 
 ## Compatibility
-
-- Tested on Windows, macOS, and Linux
-- Requires `numpy`, `matplotlib`, `Jupyter`
+- Tested on Windows.
+- Requires `numpy`, `matplotlib`, `Jupyter`, `sklearn`.
