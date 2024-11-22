@@ -8,6 +8,9 @@ ILYA
 - Amogh Vastrad - A20588808
 
 
+## Project Overview
+In this project we have implemented generic k-fold cross-validation and bootstrapping methods for model selection,which test how well a model is likely to perform on new data. We have also included the Akaike Information Criterion (AIC) to compare models.This model evaluates the performance of regression models and compares it with the AIC.
+
 
 ## How to run the code
 
