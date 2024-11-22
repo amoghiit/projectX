@@ -31,7 +31,7 @@ ILYA
 #### Steps to Execute
 1. Go to the `src` folder.
 2. Execute the command: `python .\pythonModelTest.py`
-3. View the plots for insights into model performance and residuals.
+
 
 ![alt text](image.png)
 ## Outputs
@@ -51,6 +51,7 @@ ILYA
     - Residual distribution plot.
     - Error comparison across methods.
     - Bootstrapping confidence intervals.
+
 
 ## Key Questions and Answers
 
@@ -81,3 +82,6 @@ ILYA
 ## Compatibility
 - Tested on Windows
 - Requires `numpy`, `matplotlib`, `Jupyter`, `sklearn`
+
+## More data
+- if you had time check data folder for various plot and results
