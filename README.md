@@ -28,6 +28,7 @@
 2. Execute the command: `python .\pythonModelTest.py`
 3. View the plots for insights into model performance and residuals.
 
+![alt text](image.png)
 ## Outputs
 
 1. **Cross-Validation:**
