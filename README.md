@@ -84,4 +84,4 @@ ILYA
 - Requires `numpy`, `matplotlib`, `Jupyter`, `sklearn`
 
 ## More data
-- if you had time check data folder for various plot and results
+- If you had time check the data folder for various plots and results
